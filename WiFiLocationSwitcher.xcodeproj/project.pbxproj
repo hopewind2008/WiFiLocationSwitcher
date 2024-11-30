@@ -1,0 +1,663 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C60324462CF9AD6500D842AD /* AppIcon.svg in Resources */ = {isa = PBXBuildFile; fileRef = C60324452CF9AD6500D842AD /* AppIcon.svg */; };
+		C60324482CF9B86600D842AD /* AppIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = C60324472CF9B86600D842AD /* AppIcon.icns */; };
+		C6869C4E2CF95BD700DF2D63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6869C4D2CF95BD700DF2D63 /* AppDelegate.swift */; };
+		C6869C7D2CF95C4F00DF2D63 /* NetworkConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6869C7A2CF95C4E00DF2D63 /* NetworkConfigurator.swift */; };
+		C6869C7E2CF95C4F00DF2D63 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6869C792CF95C4E00DF2D63 /* main.swift */; };
+		C6869C7F2CF95C4F00DF2D63 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6869C7B2CF95C4E00DF2D63 /* SettingsViewController.swift */; };
+		C6869C812CF95C4F00DF2D63 /* WiFiMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6869C7C2CF95C4E00DF2D63 /* WiFiMonitor.swift */; };
+		C6869C922CF96A3800DF2D63 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C6869C912CF96A3800DF2D63 /* Info.plist */; };
+		C6869C952CF96AF000DF2D63 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C6869C942CF96AF000DF2D63 /* README.md */; };
+		C6869D1E2CF9A02500DF2D63 /* Settings.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6869D1D2CF9A02500DF2D63 /* Settings.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C6869C5C2CF95BD900DF2D63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C6869C422CF95BD700DF2D63 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C6869C492CF95BD700DF2D63;
+			remoteInfo = WiFiLocationSwitcher;
+		};
+		C6869C662CF95BDA00DF2D63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C6869C422CF95BD700DF2D63 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C6869C492CF95BD700DF2D63;
+			remoteInfo = WiFiLocationSwitcher;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C60324452CF9AD6500D842AD /* AppIcon.svg */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = AppIcon.svg; sourceTree = "<group>"; };
+		C60324472CF9B86600D842AD /* AppIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = AppIcon.icns; sourceTree = "<group>"; };
+		C6869C4A2CF95BD700DF2D63 /* WiFiLocationSwitcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WiFiLocationSwitcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6869C4D2CF95BD700DF2D63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C6869C5B2CF95BD900DF2D63 /* WiFiLocationSwitcherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WiFiLocationSwitcherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6869C652CF95BDA00DF2D63 /* WiFiLocationSwitcherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WiFiLocationSwitcherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6869C792CF95C4E00DF2D63 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		C6869C7A2CF95C4E00DF2D63 /* NetworkConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfigurator.swift; sourceTree = "<group>"; };
+		C6869C7B2CF95C4E00DF2D63 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		C6869C7C2CF95C4E00DF2D63 /* WiFiMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiFiMonitor.swift; sourceTree = "<group>"; };
+		C6869C912CF96A3800DF2D63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6869C932CF96A4900DF2D63 /* WiFiLocationSwitcher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WiFiLocationSwitcher.entitlements; sourceTree = SOURCE_ROOT; };
+		C6869C942CF96AF000DF2D63 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C6869D1D2CF9A02500DF2D63 /* Settings.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Settings.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		C6869C962CF96BD100DF2D63 /* Exceptions for "WiFiLocationSwitcher" folder in "WiFiLocationSwitcher" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				ViewController.swift,
+			);
+			target = C6869C492CF95BD700DF2D63 /* WiFiLocationSwitcher */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		C6869C4C2CF95BD700DF2D63 /* WiFiLocationSwitcher */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				C6869C962CF96BD100DF2D63 /* Exceptions for "WiFiLocationSwitcher" folder in "WiFiLocationSwitcher" target */,
+			);
+			path = WiFiLocationSwitcher;
+			sourceTree = "<group>";
+		};
+		C6869C5E2CF95BDA00DF2D63 /* WiFiLocationSwitcherTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = WiFiLocationSwitcherTests;
+			sourceTree = "<group>";
+		};
+		C6869C682CF95BDA00DF2D63 /* WiFiLocationSwitcherUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = WiFiLocationSwitcherUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C6869C472CF95BD700DF2D63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6869C582CF95BD900DF2D63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6869C622CF95BDA00DF2D63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C6869C412CF95BD700DF2D63 = {
+			isa = PBXGroup;
+			children = (
+				C6869C902CF961C800DF2D63 /* Interface */,
+				C6869C8F2CF961BE00DF2D63 /* Supporting Files */,
+				C6869C8D2CF9619900DF2D63 /* Sources */,
+				C6869C8C2CF9611D00DF2D63 /* Resources */,
+				C6869C5E2CF95BDA00DF2D63 /* WiFiLocationSwitcherTests */,
+				C6869C682CF95BDA00DF2D63 /* WiFiLocationSwitcherUITests */,
+				C6869C4B2CF95BD700DF2D63 /* Products */,
+				C6869C4C2CF95BD700DF2D63 /* WiFiLocationSwitcher */,
+				C6869C942CF96AF000DF2D63 /* README.md */,
+			);
+			sourceTree = "<group>";
+		};
+		C6869C4B2CF95BD700DF2D63 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C6869C4A2CF95BD700DF2D63 /* WiFiLocationSwitcher.app */,
+				C6869C5B2CF95BD900DF2D63 /* WiFiLocationSwitcherTests.xctest */,
+				C6869C652CF95BDA00DF2D63 /* WiFiLocationSwitcherUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C6869C8C2CF9611D00DF2D63 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C6869D1D2CF9A02500DF2D63 /* Settings.xib */,
+				C60324452CF9AD6500D842AD /* AppIcon.svg */,
+				C60324472CF9B86600D842AD /* AppIcon.icns */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C6869C8D2CF9619900DF2D63 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				C6869C4D2CF95BD700DF2D63 /* AppDelegate.swift */,
+				C6869C792CF95C4E00DF2D63 /* main.swift */,
+				C6869C7A2CF95C4E00DF2D63 /* NetworkConfigurator.swift */,
+				C6869C7B2CF95C4E00DF2D63 /* SettingsViewController.swift */,
+				C6869C7C2CF95C4E00DF2D63 /* WiFiMonitor.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		C6869C8F2CF961BE00DF2D63 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C6869C912CF96A3800DF2D63 /* Info.plist */,
+				C6869C932CF96A4900DF2D63 /* WiFiLocationSwitcher.entitlements */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C6869C902CF961C800DF2D63 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C6869C492CF95BD700DF2D63 /* WiFiLocationSwitcher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6869C6F2CF95BDA00DF2D63 /* Build configuration list for PBXNativeTarget "WiFiLocationSwitcher" */;
+			buildPhases = (
+				C6869C462CF95BD700DF2D63 /* Sources */,
+				C6869C472CF95BD700DF2D63 /* Frameworks */,
+				C6869C482CF95BD700DF2D63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				C6869C4C2CF95BD700DF2D63 /* WiFiLocationSwitcher */,
+			);
+			name = WiFiLocationSwitcher;
+			packageProductDependencies = (
+			);
+			productName = WiFiLocationSwitcher;
+			productReference = C6869C4A2CF95BD700DF2D63 /* WiFiLocationSwitcher.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C6869C5A2CF95BD900DF2D63 /* WiFiLocationSwitcherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6869C722CF95BDA00DF2D63 /* Build configuration list for PBXNativeTarget "WiFiLocationSwitcherTests" */;
+			buildPhases = (
+				C6869C572CF95BD900DF2D63 /* Sources */,
+				C6869C582CF95BD900DF2D63 /* Frameworks */,
+				C6869C592CF95BD900DF2D63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C6869C5D2CF95BD900DF2D63 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				C6869C5E2CF95BDA00DF2D63 /* WiFiLocationSwitcherTests */,
+			);
+			name = WiFiLocationSwitcherTests;
+			packageProductDependencies = (
+			);
+			productName = WiFiLocationSwitcherTests;
+			productReference = C6869C5B2CF95BD900DF2D63 /* WiFiLocationSwitcherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C6869C642CF95BDA00DF2D63 /* WiFiLocationSwitcherUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6869C752CF95BDA00DF2D63 /* Build configuration list for PBXNativeTarget "WiFiLocationSwitcherUITests" */;
+			buildPhases = (
+				C6869C612CF95BDA00DF2D63 /* Sources */,
+				C6869C622CF95BDA00DF2D63 /* Frameworks */,
+				C6869C632CF95BDA00DF2D63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C6869C672CF95BDA00DF2D63 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				C6869C682CF95BDA00DF2D63 /* WiFiLocationSwitcherUITests */,
+			);
+			name = WiFiLocationSwitcherUITests;
+			packageProductDependencies = (
+			);
+			productName = WiFiLocationSwitcherUITests;
+			productReference = C6869C652CF95BDA00DF2D63 /* WiFiLocationSwitcherUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C6869C422CF95BD700DF2D63 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1610;
+				LastUpgradeCheck = 1610;
+				TargetAttributes = {
+					C6869C492CF95BD700DF2D63 = {
+						CreatedOnToolsVersion = 16.1;
+					};
+					C6869C5A2CF95BD900DF2D63 = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = C6869C492CF95BD700DF2D63;
+					};
+					C6869C642CF95BDA00DF2D63 = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = C6869C492CF95BD700DF2D63;
+					};
+				};
+			};
+			buildConfigurationList = C6869C452CF95BD700DF2D63 /* Build configuration list for PBXProject "WiFiLocationSwitcher" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C6869C412CF95BD700DF2D63;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = C6869C4B2CF95BD700DF2D63 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C6869C492CF95BD700DF2D63 /* WiFiLocationSwitcher */,
+				C6869C5A2CF95BD900DF2D63 /* WiFiLocationSwitcherTests */,
+				C6869C642CF95BDA00DF2D63 /* WiFiLocationSwitcherUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C6869C482CF95BD700DF2D63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6869C922CF96A3800DF2D63 /* Info.plist in Resources */,
+				C60324482CF9B86600D842AD /* AppIcon.icns in Resources */,
+				C6869C952CF96AF000DF2D63 /* README.md in Resources */,
+				C6869D1E2CF9A02500DF2D63 /* Settings.xib in Resources */,
+				C60324462CF9AD6500D842AD /* AppIcon.svg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6869C592CF95BD900DF2D63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6869C632CF95BDA00DF2D63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C6869C462CF95BD700DF2D63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6869C4E2CF95BD700DF2D63 /* AppDelegate.swift in Sources */,
+				C6869C7D2CF95C4F00DF2D63 /* NetworkConfigurator.swift in Sources */,
+				C6869C7E2CF95C4F00DF2D63 /* main.swift in Sources */,
+				C6869C7F2CF95C4F00DF2D63 /* SettingsViewController.swift in Sources */,
+				C6869C812CF95C4F00DF2D63 /* WiFiMonitor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6869C572CF95BD900DF2D63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6869C612CF95BDA00DF2D63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C6869C5D2CF95BD900DF2D63 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C6869C492CF95BD700DF2D63 /* WiFiLocationSwitcher */;
+			targetProxy = C6869C5C2CF95BD900DF2D63 /* PBXContainerItemProxy */;
+		};
+		C6869C672CF95BDA00DF2D63 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C6869C492CF95BD700DF2D63 /* WiFiLocationSwitcher */;
+			targetProxy = C6869C662CF95BDA00DF2D63 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C6869C6D2CF95BDA00DF2D63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C6869C6E2CF95BDA00DF2D63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		C6869C702CF95BDA00DF2D63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_OPTIMIZATION = time;
+				CODE_SIGN_ENTITLEMENTS = "Supporting Files/WiFiLocationSwitcher.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1.1;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 9K37A7YVQW;
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "Supporting Files/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = WiFiLocationSwitcher;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hopewind.WiFiLocationSwitcher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				VALID_ARCHS = x86_64;
+			};
+			name = Debug;
+		};
+		C6869C712CF95BDA00DF2D63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_OPTIMIZATION = time;
+				CODE_SIGN_ENTITLEMENTS = "Supporting Files/WiFiLocationSwitcher.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1.1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = 9K37A7YVQW;
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "Supporting Files/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = WiFiLocationSwitcher;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hopewind.WiFiLocationSwitcher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				VALID_ARCHS = x86_64;
+			};
+			name = Release;
+		};
+		C6869C732CF95BDA00DF2D63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9K37A7YVQW;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hopewind.WiFiLocationSwitcherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WiFiLocationSwitcher.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WiFiLocationSwitcher";
+			};
+			name = Debug;
+		};
+		C6869C742CF95BDA00DF2D63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9K37A7YVQW;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hopewind.WiFiLocationSwitcherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WiFiLocationSwitcher.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WiFiLocationSwitcher";
+			};
+			name = Release;
+		};
+		C6869C762CF95BDA00DF2D63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9K37A7YVQW;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hopewind.WiFiLocationSwitcherUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = WiFiLocationSwitcher;
+			};
+			name = Debug;
+		};
+		C6869C772CF95BDA00DF2D63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9K37A7YVQW;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hopewind.WiFiLocationSwitcherUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = WiFiLocationSwitcher;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C6869C452CF95BD700DF2D63 /* Build configuration list for PBXProject "WiFiLocationSwitcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6869C6D2CF95BDA00DF2D63 /* Debug */,
+				C6869C6E2CF95BDA00DF2D63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6869C6F2CF95BDA00DF2D63 /* Build configuration list for PBXNativeTarget "WiFiLocationSwitcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6869C702CF95BDA00DF2D63 /* Debug */,
+				C6869C712CF95BDA00DF2D63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6869C722CF95BDA00DF2D63 /* Build configuration list for PBXNativeTarget "WiFiLocationSwitcherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6869C732CF95BDA00DF2D63 /* Debug */,
+				C6869C742CF95BDA00DF2D63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6869C752CF95BDA00DF2D63 /* Build configuration list for PBXNativeTarget "WiFiLocationSwitcherUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6869C762CF95BDA00DF2D63 /* Debug */,
+				C6869C772CF95BDA00DF2D63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C6869C422CF95BD700DF2D63 /* Project object */;
+}

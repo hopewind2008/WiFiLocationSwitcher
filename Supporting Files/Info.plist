@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleIdentifier</key>
+    <string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+    <key>CFBundleName</key>
+    <string>$(PRODUCT_NAME)</string>
+    <key>CFBundlePackageType</key>
+    <string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
+    <key>CFBundleShortVersionString</key>
+    <string>1.1</string>
+    <key>CFBundleVersion</key>
+    <string>2</string>
+    <key>LSBackgroundOnly</key>
+    <true/>
+    <key>LSMinimumSystemVersion</key>
+    <string>$(MACOSX_DEPLOYMENT_TARGET)</string>
+    <key>LSUIElement</key>
+    <true/>
+    <key>NSPrincipalClass</key>
+    <string>NSApplication</string>
+    <key>NSNetworkVolumesUsageDescription</key>
+    <string>需要访问网络以监控 WiFi 状态</string>
+    <key>NSSystemAdministrationUsageDescription</key>
+    <string>需要管理员权限以修改网络设置</string>
+    <key>SMPrivilegedExecutables</key>
+    <dict>
+        <key>com.hopewind.WiFiLocationSwitcherHelper</key>
+        <string>identifier "com.hopewind.WiFiLocationSwitcherHelper" and anchor apple generic and certificate leaf[subject.CN] = "Apple Development: Your Name (XXXXXXXXXX)"</string>
+    </dict>
+    <key>CFBundleIconFile</key>
+    <string>AppIcon</string>
+</dict>
+</plist> 
