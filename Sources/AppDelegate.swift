@@ -9,8 +9,9 @@
 
 import Cocoa
 import ServiceManagement
+import UserNotifications
 
-class AppDelegate: NSObject, NSApplicationDelegate {
+class AppDelegate: NSObject, NSApplicationDelegate, UNUserNotificationCenterDelegate {
     /// 状态栏图标项
     var statusItem: NSStatusItem!
     
@@ -32,6 +33,16 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     /// 应用程序启动时的初始化
     func applicationDidFinishLaunching(_ notification: Notification) {
         print("应用程序启动...")
+        
+        // 请求通知权限
+        UNUserNotificationCenter.current().delegate = self
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound]) { granted, error in
+            if granted {
+                print("通知权限已授予")
+            } else if let error = error {
+                print("通知权限请求失败: \(error)")
+            }
+        }
         
         // 设置状态栏图标
         setupStatusItem()
@@ -77,7 +88,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         menu.addItem(NSMenuItem.separator())
         
-        // 开机启动选项
+        // ���机启动选项
         let launchAtLoginItem = NSMenuItem(title: "开机启动", action: #selector(toggleLaunchAtLogin), keyEquivalent: "")
         launchAtLoginItem.target = self
         launchAtLoginItem.state = isLaunchAtLoginEnabled() ? .on : .off
@@ -106,7 +117,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     /// - Parameter notification: 包含新状态信息的通知对象
     @objc func updateStatus(_ notification: Notification) {
         if let status = notification.userInfo?["status"] as? String {
-            statusMenuItem.title = "状态: \(status)"
+            statusMenuItem.title = "状���: \(status)"
             
             // 更新状态栏图标
             switch status {
@@ -226,6 +237,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                 showNotification("开机启动设置失败", "无法修改系统设置")
             }
         }
+    }
+    
+    // 实现通知代理方法
+    func userNotificationCenter(_ center: UNUserNotificationCenter,
+                              willPresent notification: UNNotification,
+                              withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        completionHandler([.banner, .sound])
     }
 }
 
